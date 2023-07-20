@@ -1,0 +1,8 @@
+void #SCRIPTNAME#_float(UnityTexture2D _Tex, float2 uv, out float4 Out)
+{
+    #if defined(SHADERGRAPH_PREVIEW)
+    #else
+    #endif
+    
+    Out = SAMPLE_TEXTURE2D(_Tex, _Tex.samplerstate, uv);
+}

@@ -1,0 +1,8 @@
+void #SCRIPTNAME#_float(float3 Color, float Multiplier, out float3 Result)
+{
+    #if defined(SHADERGRAPH_PREVIEW)
+    #else
+    #endif
+
+    Result = Color * Multiplier;
+}

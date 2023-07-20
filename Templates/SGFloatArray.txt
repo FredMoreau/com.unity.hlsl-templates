@@ -1,0 +1,14 @@
+float _Values[3];
+
+void #SCRIPTNAME#_float(out float First, out float Second, out float Third)
+{
+    #if defined(SHADERGRAPH_PREVIEW)
+    First = 0.5;
+    Second = 0.5;
+    Third = 0.5;
+    #else
+    First = _Values[0];
+    Second = _Values[1];
+    Third = _Values[2];
+    #endif
+}

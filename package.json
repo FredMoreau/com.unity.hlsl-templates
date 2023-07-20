@@ -1,0 +1,22 @@
+{
+    "name": "com.unity.hlsl-templates",
+    "displayName": "HLSL Templates",
+    "version": "0.0.1-preview.1",
+    "unity": "2021.3",
+    "description": "Adds HLSL file creation items to Assets/Create/Shader",
+    "author": {
+        "name": "Fred Moreau",
+        "email": "frederic.moreau@unity3d.com",
+        "url": "https://www.unity3d.com"
+    },
+    "keywords": [
+        "shader",
+        "hlsl"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:UserName/Repository.git"
+    },
+    "samples": [],
+    "hideInEditor": false
+}
