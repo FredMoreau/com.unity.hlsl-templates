@@ -9,22 +9,28 @@ namespace Unity.HLSLTemplates.Editor
     {
         const string TemplatesRoot = "Packages/com.unity.hlsl-templates/Templates";
 
-        [MenuItem("Assets/Create/Shader Graph/Custom Function HLSL File")]
+        [MenuItem("Assets/Create/HLSL/Shader Graph/Custom Function")]
         public static void CreateHLSLFile()
         {
             CreateNewFromTemplate("SGCustomFunction", "NewSGCustomFunction.hlsl");
         }
 
-        [MenuItem("Assets/Create/Shader Graph/Custom Function HLSL/Sample Texture")]
+        [MenuItem("Assets/Create/HLSL/Shader Graph/Texture Sampler")]
         public static void CreateHLSLFile_SampleTexture()
         {
-            CreateNewFromTemplate("SGSampleTexture", "NewSGSampleTexture.hlsl");
+            CreateNewFromTemplate("SGSampleTexture", "NewSGTextureSampler.hlsl");
         }
 
-        [MenuItem("Assets/Create/Shader Graph/Custom Function HLSL/FloatArray")]
+        [MenuItem("Assets/Create/HLSL/Shader Graph/FloatArray")]
         public static void CreateHLSLFile_FloatArray()
         {
             CreateNewFromTemplate("SGFloatArray", "NewSGFloatArray.hlsl");
+        }
+
+        [MenuItem("Assets/Create/HLSL/VFX Graph/Custom Function")]
+        public static void CreateVFXG_CustomFunction()
+        {
+            CreateNewFromTemplate("VFXGCustomFunction", "NewVFXGCustomFunction.hlsl");
         }
 
         public static void CreateNewFromTemplate(string template, string filename)

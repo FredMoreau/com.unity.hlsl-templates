@@ -1,0 +1,6 @@
+/// a: the tooltip for parameter a
+/// b: the tooltip for parameter b
+float #SCRIPTNAME#(in float3 a, in float3 b)
+{
+    return distance(a, b);
+}
